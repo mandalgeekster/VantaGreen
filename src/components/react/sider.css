@@ -1,0 +1,11 @@
+.ant-layout-sider.ant-layout-sider-collapsed .alifa-cloud-logo {
+    display: none;
+}
+
+.ant-layout-sider:not(.ant-layout-sider-collapsed) .alifa-cloud-logo-xs {
+    display: none;
+}
+
+.ant-layout-sider {
+    background-color: white;
+}

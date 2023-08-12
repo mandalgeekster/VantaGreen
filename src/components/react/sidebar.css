@@ -1,0 +1,59 @@
+.sidebar-custom-trigger {
+    padding: 0 12px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.sidebar-dlwarning-hidden {
+    display: none !important;
+}
+
+.sidebar-dlwarning-shown {
+    display: block !important;
+}
+
+.sidebar-dlwarning-expanded {
+    width: 200px;
+    transition: width 0.2s;
+}
+
+.sidebar-dlwarning-collapsed {
+    width: 80px;
+    transition: width 0.2s;
+}
+
+.sidebar-dlwarning {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    display: block;
+    background-color: #393362;
+    height: 52px;
+    line-height: 52px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.sidebar-dlwarning-on {
+    color: #fa8c16;
+}
+
+.sidebar-dlwarning-off {
+    color: green;
+}
+
+.sidebar-dlwarning-bullet {
+    display: inline-block;
+    height: 52px;
+    line-height: 52px;
+    padding: auto;
+    font-size: 14px;
+    transform: scale(2.7);
+}
+
+.sidebar-dlwarning-message {
+    height: 52px;
+    line-height: 52px;
+    font-size: 14px;
+    padding: auto;
+}

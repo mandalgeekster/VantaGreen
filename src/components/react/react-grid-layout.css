@@ -1,0 +1,36 @@
+.react-grid-item {
+    border: 1px solid #ccc;
+}
+
+.react-grid-layout.layout {
+}
+
+.react-grid-item {
+}
+
+.react-grid-item-arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.react-grid-item-arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.react-grid-item-arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.react-grid-item-arrow-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.react-grid-item-arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}

@@ -1,0 +1,72 @@
+.ant-drawer .ant-drawer-title:before {
+    content: "\00a0\00a0";
+    display: block;
+}
+
+.ant-drawer .ant-drawer-title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.ant-drawer .ant-drawer-body {
+    padding: 0;
+}
+
+.ant-drawer.ant-drawer-open.ant-drawer-show-warning[data-warning-message]:after {
+    content: attr(data-warning-message);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10001;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB0SURBVChTY7A0TiKIEIpinf1v12n+6hH71SP7q9nkanhULJqi/BC7zyBpZCT7tiA4H6HI2v8hugoIUrvqB1NUnWSCIQ1DRcFQRb3puuhycNTg3kuCSZYWRLgJiLD7LisiE+E7MMIIp9hAmBRCER5EhCLjJAD0Qq3yaBjEwQAAAABJRU5ErkJggg==)
+        no-repeat 33% center;
+    background-color: #393362;
+    height: 52px;
+    line-height: 52px;
+    font-size: 12px;
+    text-align: center;
+    width: 256px;
+    color: #fa8c16;
+    -webkit-animation: linear;
+    -webkit-animation-name: slide-in-from-left;
+    -webkit-animation-duration: 0.2s;
+    animation: linear;
+    animation-name: slide-in-from-left;
+    animation-duration: 0.2s;
+}
+
+@-webkit-keyframes slide-in-from-left {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 64px;
+    }
+    50% {
+        width: 128px;
+    }
+    75% {
+        width: 192px;
+    }
+    100% {
+        width: 256px;
+    }
+}
+
+@keyframes slide-in-from-left {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 64px;
+    }
+    50% {
+        width: 128px;
+    }
+    75% {
+        width: 192px;
+    }
+    100% {
+        width: 256px;
+    }
+}

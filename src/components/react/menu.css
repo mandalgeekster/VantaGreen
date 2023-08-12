@@ -1,0 +1,7 @@
+.ant-menu {
+    height: calc(100% - 75px);
+}
+
+.ant-menu li:first-child {
+    margin-top: 0;
+}

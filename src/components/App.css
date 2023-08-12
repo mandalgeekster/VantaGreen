@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* Styles go here */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#loader {
+    font-family: "Red Hat Display";
+    font-size: 20px;
+}
+
+.margin0auto {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.div-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.center-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imei-input {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 50vw
+}
+
+.button-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#default {
+    align-items: center;
+}
+
+#pebble-overview {
+    padding-left: 50px;
+}
+
+.mint-row {
+    margin: 0 -5px;
+}
+
+.mint-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Clear floats after the columns */
+.mint-column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+}
+
+.mint-card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .mint-column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+.mint-card-title {
+    font-size: 35px;
+}
+
+#mint-button {
+    font-size: 25px;
+    padding: 8px 25px 8px 25px;
+}
+
+.highcharts-axis-title {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#navbar-title {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.h1-inter {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.graph-item-header {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.h1-redhat {
+    font-family: "Red Hat Display";
+    font-size: 2rem;
+}
+
+#account {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 15px;
+    margin-top: 5px;
+}

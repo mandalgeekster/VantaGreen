@@ -1,0 +1,434 @@
+@import url(
+    http://fonts.googleapis.com/css?family=Roboto:400,
+    100,
+    100italic,
+    300,
+    300ita‌​lic,
+    400italic,
+    500,
+    500italic,
+    700,
+    700italic,
+    900italic,
+    900
+);
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+
+    background-color: #f5f5fa;
+}
+
+.dashboard-battery-widget-container {
+    background-color: #fff;
+    min-height: 200px;
+    border-radius: 5px;
+}
+
+.dashboard-windrose-widget-container {
+    background-color: #fff;
+    min-height: 200px;
+    border-radius: 5px;
+}
+
+.dashboard-table-widget-container {
+    background-color: #fff;
+    min-height: 200px;
+    border-radius: 5px;
+}
+
+.dashboard-tabbed-widget-container {
+    background-color: #fff;
+    min-height: 200px;
+    border-radius: 5px;
+}
+
+#dashboard-form-banner {
+    display: block;
+    height: 120px;
+    line-height: 120px;
+    background-color: #393362;
+    margin: 0;
+    padding: 0;
+    color: #4ecdfd;
+    font-size: 28px;
+    text-align: middle;
+    padding-left: 80px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#dataloggers-form-counter {
+    display: block;
+    height: 120px;
+    line-height: 120px;
+    background-color: #393362;
+    margin: 0;
+    padding: 0 20%;
+    color: #4ecdfd;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: right;
+}
+
+#measures-form-counter span {
+    font-size: calc(24px + 35%);
+}
+
+#dashboard-form-banner-wrapper {
+}
+
+.measures-name {
+    font-size: 22px;
+    font-weight: 550;
+    color: #4ecdfd;
+    white-space: nowrap;
+}
+
+/*.datalogger-ping-time,*/
+.measure-place {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #bfbfbf;
+    white-space: nowrap;
+}
+
+.measures-form-row-add {
+    margin-bottom: 30px;
+}
+
+.measures-form-row-add .ant-row-flex {
+    border: 1px solid #ccc;
+}
+
+.measures-form-row {
+    border: 1px solid #f3f3f3;
+    height: 120px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.measure-status-ko a {
+    text-decoration: none;
+}
+
+.measure-minature {
+    text-align: center;
+    line-height: 120px;
+    font-size: 30px;
+    color: #bfbfbf;
+}
+
+.measures-form-row-wrapper,
+.measures-form-row-wrapper-md {
+    padding: 40px 0;
+    _border-bottom: 1px solid #d9d9d9;
+}
+
+.measures-form-row-wrapper-sm {
+    padding: 40px 0;
+}
+
+.measures-form-row-wrapper.measures-form-last-row {
+    border-bottom: 0;
+}
+
+.measures-form-dldata-message {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fa8c16;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.measures-form-dldata-title {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.measures-form-dldata-measures-field-heading {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.measures-form-dldata-measures-field,
+.measures-form-dldata-measures-dtfield {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: 550;
+    color: #262626;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.measures-form-dldata-measures-field .ant-col:last-child {
+    color: red;
+}
+
+.measures-form-dldata-measures-row {
+    line-height: 40px;
+}
+
+.measures-form-dldata-measures-row:not(:last-child):after {
+    width: calc(100% - 40px);
+    _border-bottom: 1px solid #bfbfbf;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+}
+
+.measures-form-dldata .measures-form-dldata-measures-row:last-child {
+    padding-bottom: 30px;
+    border-bottom: 0;
+}
+
+.measures-form-initial-spacing {
+    border-top: 1px solid #ccc;
+}
+
+.measures-form-divider {
+    content: "";
+    display: inline-block;
+    width: 92%;
+    _margin: 0 10% 0 10%;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.measures-status-title {
+    font-weight: 650;
+    font-size: 30px;
+    color: #4ecdfd;
+}
+
+.measures-status-place {
+    font-weight: 400;
+    font-size: 22px;
+    color: #ccc;
+}
+
+.measures-status-ping {
+    font-weight: 550;
+    font-size: 12px;
+    color: #000;
+    margin: 20px 0;
+}
+
+.measures-status-id {
+    font-weight: 450;
+    font-size: 12px;
+    color: #8c8c8c;
+}
+
+.measures-status-id:before {
+    content: "ID #";
+    display: inline-block;
+}
+
+.measures-status-ping-ok:before {
+    content: "\A";
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    background: #73d13d;
+    display: inline-block;
+}
+
+.measures-status-ping-ko:before {
+    content: "\A";
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    background: #b83b3b;
+    display: inline-block;
+}
+
+.measures-form-back-button {
+    font-weight: 550;
+    font-size: 12px;
+    color: #ccc;
+    margin: 10px 0;
+    display: block;
+}
+
+.measures-form-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #4ecdfd;
+}
+
+.measure-name,
+.measure-place {
+    height: 30px;
+}
+
+.measure-ping-time span {
+    display: block;
+}
+
+.measure-status div {
+    float: left;
+    display: flex;
+}
+
+.measure-status span:first-child {
+    font-size: 45px;
+}
+
+.measure-status span:last-child {
+    font-size: 35px;
+}
+
+.measure-status span.measure-status-ko {
+    color: #fa8c16;
+}
+
+.measure-status {
+    line-height: 120px;
+}
+
+.measure-fullname {
+    line-height: 120px;
+}
+
+.measure-ping-time {
+    line-height: 120px;
+}
+
+.measure-update-settings,
+.measure-update-settings a {
+    text-align: right;
+    line-height: 120px;
+    color: #bfbfbf;
+}
+
+.measure-update-settings span {
+    display: block;
+}
+
+.onboarding-step-title {
+    font-size: 22px;
+    font-weight: 550;
+    color: #4ecdfd;
+    white-space: nowrap;
+}
+
+.onboarding-step-image-container {
+    position: relative;
+}
+
+.onboarding-step-image {
+    position: absolute;
+    display: block;
+    left: -115px;
+    top: 8px;
+    width: 80px;
+    height: 60px;
+    transform: skew(-5deg);
+    background: #b5f3ff;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAMCAYAAAB1Lg0yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAAmSURBVDhPY2RgYPgPxHQHTFCa7mDUYrqBUYvpBkYtphsYIIsZGADsXwEX3nz3qgAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-position: 14% 18%;
+    background-size: 30px 12px;
+    border-radius: 5px;
+    border: 3px solid #224582;
+    -webkit-box-shadow: 5px 5px 6px 0px black;
+    box-shadow: 5px 5px 6px 0px black;
+}
+
+.onboarding-step-1 [data-step="onboarding-step-2"],
+.onboarding-step-1 [data-step="onboarding-step-3"] {
+    display: none;
+}
+
+.onboarding-step-2 [data-step="onboarding-step-1"],
+.onboarding-step-2 [data-step="onboarding-step-3"] {
+    display: none;
+}
+
+.onboarding-step-3 [data-step="onboarding-step-1"],
+.onboarding-step-3 [data-step="onboarding-step-2"] {
+    display: none;
+}
+
+.account-form-save-button {
+    padding: 20px 0;
+}
+
+.account-form-save-button button {
+    width: 190px;
+    height: 60px;
+}
+
+.alifa-cloud-logo,
+.alifa-cloud-logo-xs,
+.ant-layout-header {
+    height: 75px;
+}
+
+.alifa-cloud-logo,
+.alifa-cloud-logo-xs {
+    border-right: 1px solid #e8e8e8;
+}
+
+.alifa-cloud-logo svg {
+    height: 90%;
+    width: 90%;
+    padding: 0.33em 1em;
+}
+
+.alifa-cloud-logo-xs {
+    width: 80px;
+}
+
+.alifa-cloud-logo-xs svg {
+    transform: translate(35%, 100%);
+}
+
+.ping-date-narrowed-aligment {
+    padding: 0 25%;
+}
+
+.ant-layout-header {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.field label {
+    font-family: sans-serif;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 40px;
+    color: #002766;
+    white-space: nowrap;
+}
+
+.field input.ant-input-lg,
+.field input[mask] {
+    height: 52px;
+}
+.field input[mask].field-failed-validation {
+    box-shadow: 0 0 1.5px 1px red;
+}

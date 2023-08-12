@@ -1,0 +1,116 @@
+.user-dropdown,
+.user-menu {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.user-menu {
+    height: 70px;
+    _padding: 0 1rem;
+    margin-left: 0;
+    top: 0;
+    z-index: 10;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.user-menu:hover {
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.user-menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 20px;
+    width: 220px;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.user-image-wrapper {
+    height: 70px;
+    background-color: transparent;
+    z-index: 20;
+}
+
+.user-image {
+    display: inline-block;
+    margin-top: 14px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #bfbfbf;
+    overflow: hidden;
+}
+
+.user-image .anticon {
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+.user-name-wrapper {
+    padding-left: 0.4rem;
+}
+
+.user-name-wrapper i {
+    padding: 0 0.3rem;
+}
+
+.user-name-wrapper .anticon-caret-down,
+.user-name-wrapper .anticon-caret-up {
+    padding-left: 10px;
+}
+
+.user-name-content {
+    white-space: nowrap;
+}
+
+.user-menu.show {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.user-menu.show .user-dropdown {
+    display: block;
+}
+
+.user-menu.show {
+    _box-shadow: -2px 4px 7px #ccc;
+    box-shadow: 0 5px 8px 2px #0000004d, 5px 75px 150px 4px #0000004d;
+}
+
+.user-dropdown {
+    position: absolute;
+    top: 70px;
+    display: none;
+    right: 0;
+    width: 220px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    color: #000;
+    display: block;
+    padding: 1rem 0 1rem 3.5em;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.dropdown-item:active,
+.dropdown-item:hover {
+    background-color: #ebf5ff;
+}
+
+.dropdown-item span {
+    color: #03a9fa;
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}

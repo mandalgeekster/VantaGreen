@@ -1,0 +1,73 @@
+{
+    "name": "IoTex",
+    "version": "0.1.0",
+    "description": "IoTex Hackathon 2021",
+    "author": "Jason",
+    "license": "MIT",
+    "devDependencies": {
+        "@ant-design/icons": "^4.0.0-alpha.19",
+        "@openzeppelin/contracts": "latest",
+        "@openzeppelin/contracts-ethereum-package": "latest",
+        "@openzeppelin/upgrades": "latest",
+        "@truffle/hdwallet-provider": "^1.5.0",
+        "dotenv": "^10.0.0"
+    },
+    "dependencies": {
+        "antd": "^4.17.2",
+        "antd-mask-input": "0.1.15",
+        "apollo-cache-inmemory": "1.6.6",
+        "apollo-client": "2.6.10",
+        "apollo-link-http": "1.5.17",
+        "axios": "0.19.1",
+        "babel-polyfill": "6.26.0",
+        "babel-preset-env": "1.7.0",
+        "babel-preset-es2015": "6.24.1",
+        "babel-preset-stage-2": "6.24.1",
+        "babel-preset-stage-3": "6.24.1",
+        "babel-register": "6.26.0",
+        "bootstrap": "4.3.1",
+        "bignumber.js": "^9.0.1",
+        "chai": "4.2.0",
+        "chai-as-promised": "7.1.1",
+        "chai-bignumber": "3.0.0",
+        "corepack": "0.10.0",
+        "cors": "^2.8.5",
+        "cross-fetch": "3.1.4",
+        "express": "^4.17.1",
+        "graphql-tag": "2.12.6",
+        "ig": "^0.0.5",
+        "moment": "^2.29.1",
+        "moralis-admin-cli": "^2.1.15",
+        "prop-types": "latest",
+        "protobufjs": "6.11.2",
+        "react": "^18.2.0",
+        "react-bootstrap": "1.0.0-beta.5",
+        "react-dom": "16.9.0",
+        "react-router-dom": "latest",
+        "react-grid-layout": "1.3.0",
+        "react-inlinesvg": "2.3.0",
+        "react-resizable": "3.0.4",
+        "react-scripts": "2.1.3",
+        "react-sizeme": "3.0.2",
+        "resize-observer-polyfill": "1.5.1",
+        "styled-components": "5.3.3",
+        "truffle": "latest",
+        "web3": "1.0.0-beta.55"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "server": "node src/server.js",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ]
+}
