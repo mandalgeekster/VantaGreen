@@ -147,7 +147,7 @@ class App extends Component {
     // Load data from the Blockchain
     async loadBlockchainData() {
         this.setState({ loading : true })
-        const web3 = window.ethereum
+        const web3 = new Web3(window.ethereum)
         const accounts = await web3.eth.getAccounts()
         console.log("[INFO] MetaMask accounts: ", accounts)
 
@@ -156,21 +156,21 @@ class App extends Component {
         
         // We'll use this network ID to connect to the smart contract deployed to the Ganache network, rather than the main Ethereum network for example.
         // IoTeX returns "4689" for mainnet, and "4690" for testnet
-        const network_id = await web3.net.getId()
+        const network_id = await web3.eth.getChainId()
         console.log("[INFO] Network id = ", network_id)
         switch(network_id.toString()) {
             case "4690":
                 this.setState({ is_account_connected : true })
                 break
             default:
-                web3.request({
+                window.ethereum.request({
                     method: "wallet_addEthereumChain",
                     params: [
                         {
                             chainId: "0x1252",
-                            chainName: "IOTEXT Testnet",
+                            chainName: "IOTEX Testnet",
                             nativeCurrency: {
-                                name: "IOTEXT",
+                                name: "IOTEX",
                                 symbol: "IOTX",
                                 decimals: 18,
                             },
@@ -221,7 +221,7 @@ class App extends Component {
         // Run the query
         axios({
             method: "GET",
-            url: `http://localhost:5000/fetch_data?imei=${imei1}`,
+            url: `https://5000-viroy-vantagreen-mzvrpegrqk4.ws-us103.gitpod.io/fetch_data?imei=${imei1}`,
         }).then(async (query_result) => {
             for(var index in query_result.data.data.deviceRecords) {
                 const data_point = query_result.data.data.deviceRecords[index];
@@ -534,3 +534,4 @@ class App extends Component {
 }
 
 export default App;
+
