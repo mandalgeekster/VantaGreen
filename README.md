@@ -1,4 +1,4 @@
-# VantaGreen - IoTeX Ideathon
+
 
 ## Testing Instructions
 To test this project locally, run
