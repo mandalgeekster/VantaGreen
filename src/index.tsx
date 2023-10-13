@@ -5,7 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 import { BreakpointProvider } from "./components/react/breakpoint";
 import "./components/Bootstrap.css";
 
-const queries = {
+const queries: { [key: string]: string } = {
     xs: "(max-width: 320px)",
     sm: "(max-width: 720px)",
     s1: "(max-width: 920px)",
@@ -21,7 +21,7 @@ const queries = {
 class ErrorBoundary extends React.Component {
     state = { error: null, errorInfo: null };
   
-    componentDidCatch(error, errorInfo) {
+    componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
         this.setState({
             error: error,
             errorInfo: errorInfo
