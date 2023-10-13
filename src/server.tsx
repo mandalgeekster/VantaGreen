@@ -9,7 +9,6 @@ const PORT = 5000;
 
 app.use(cors());
 
-// Define the TruStream Subgraph Endpoint
 const TRUSTREAM_SUBGRAPH = 'https://subgraph.iott.network/subgraphs/name/iotex/pebble-subgraph';
 
 const client = new ApolloClient({
