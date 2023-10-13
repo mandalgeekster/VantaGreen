@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
-class NavBar extends Component {
+interface NavBarProps {
+    account: string | null;
+}
+
+class NavBar extends Component<NavBarProps> {
     render() {
         return (
             <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
@@ -11,7 +15,7 @@ class NavBar extends Component {
                     </li>
                 </ul>
             </nav>
-        )
+        );
     }
 }
 
